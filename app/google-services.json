@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "595125695039",
+    "firebase_url": "https://checksp-3bcbc-default-rtdb.firebaseio.com",
+    "project_id": "checksp-3bcbc",
+    "storage_bucket": "checksp-3bcbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595125695039:android:8c13172f9ef5c3abb57e8a",
+        "android_client_info": {
+          "package_name": "com.example.sp_check1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-2V9lN72ACdWzeaFmgfq1b1ZGvPX6h64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

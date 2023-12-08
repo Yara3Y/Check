@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="signin" type="id" />
+    <item name="signUp" type="id" />
+    <item name="phone" type="id" />
+    <item name="email" type="id" />
+    <item name="Username" type="id" />
+    <item name="L_Name" type="id" />
+    <item name="F_Name" type="id" />
+    <item name="gate1" type="id" />
+</resources>

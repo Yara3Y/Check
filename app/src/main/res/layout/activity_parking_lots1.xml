@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parkingLots"
+    tools:context=".ParkingLots">
+
+    <ImageView
+        android:id="@+id/lots"
+        android:layout_width="392dp"
+        android:layout_height="757dp"
+        android:background="@drawable/a_parking"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="350dp"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        android:background="@drawable/baseline_home_24"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <Button
+        android:id="@+id/state1"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="319dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        android:onClick="onClickBook1"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+    <Button
+        android:id="@+id/state2"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="260dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        app:toggleCheckedStateOnClick="false"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state2"
+        app:layout_constraintTop_toTopOf="@+id/state2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state3"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="202dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"/>
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state3"
+        app:layout_constraintTop_toTopOf="@+id/state3"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <TextView
+
+        android:layout_width="31dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textColor="#636363"
+        android:textSize="25sp"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state1"
+        app:layout_constraintTop_toTopOf="@+id/state1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state4"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="143dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textColor="#636363"
+        android:textSize="25sp"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state4"
+        app:layout_constraintTop_toTopOf="@+id/state4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state5"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="84.5dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state5"
+        app:layout_constraintTop_toTopOf="@+id/state5"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state6"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"/>
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state6"
+        app:layout_constraintTop_toTopOf="@+id/state6"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state7"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="319dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state7"
+        app:layout_constraintTop_toTopOf="@+id/state7"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/state8"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="261dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state8"
+        app:layout_constraintTop_toTopOf="@+id/state8"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state9"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="202dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state9"
+        app:layout_constraintTop_toTopOf="@+id/state9"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state10"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="143dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textColor="#636363"
+        android:textSize="25sp"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state10"
+        app:layout_constraintTop_toTopOf="@+id/state10"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state11"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/btn_shape"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state11"
+        app:layout_constraintTop_toTopOf="@+id/state11"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state12"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/btn_shape"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state12"
+        app:layout_constraintTop_toTopOf="@+id/state12"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state13"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="318dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state13"
+        app:layout_constraintTop_toTopOf="@+id/state13"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state14"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="260dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state14"
+        app:layout_constraintTop_toTopOf="@+id/state14"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/state15"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="201dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state15"
+        app:layout_constraintTop_toTopOf="@+id/state15"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state16"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="143dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state16"
+        app:layout_constraintTop_toTopOf="@+id/state16"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state17"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state17"
+        app:layout_constraintTop_toTopOf="@+id/state17"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state18"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="25.5dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textColor="#636363"
+        android:textSize="25sp"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state18"
+        app:layout_constraintTop_toTopOf="@+id/state18"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state19"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="319dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state19"
+        app:layout_constraintTop_toTopOf="@+id/state19"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state20"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="260dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state20"
+        app:layout_constraintTop_toTopOf="@+id/state20"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state21"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="201dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"/>
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state21"
+        app:layout_constraintTop_toTopOf="@+id/state21"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state22"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="143dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state22"
+        app:layout_constraintTop_toTopOf="@+id/state22"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state23"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"/>
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state23"
+        app:layout_constraintTop_toTopOf="@+id/state23"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state24"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state24"
+        app:layout_constraintTop_toTopOf="@+id/state24"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state25"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="507dp"
+        android:layout_marginEnd="323dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state25"
+        app:layout_constraintTop_toTopOf="@+id/state25"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state26"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="507dp"
+        android:layout_marginEnd="263dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state26"
+        app:layout_constraintTop_toTopOf="@+id/state26"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state27"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="507dp"
+        android:layout_marginEnd="205dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textColor="#636363"
+        android:textSize="25sp"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state27"
+        app:layout_constraintTop_toTopOf="@+id/state27"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state28"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="507dp"
+        android:layout_marginEnd="146dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state28"
+        app:layout_constraintTop_toTopOf="@+id/state28"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state29"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="507dp"
+        android:layout_marginEnd="87dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state29"
+        app:layout_constraintTop_toTopOf="@+id/state29"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state30"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="507dp"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state30"
+        app:layout_constraintTop_toTopOf="@+id/state30"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state31"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="587dp"
+        android:layout_marginEnd="322.5dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state31"
+        app:layout_constraintTop_toTopOf="@+id/state31"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state32"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="587dp"
+        android:layout_marginEnd="264dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state32"
+        app:layout_constraintTop_toTopOf="@+id/state32"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state33"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="587dp"
+        android:layout_marginEnd="205dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textColor="#636363"
+        android:textSize="25sp"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state33"
+        app:layout_constraintTop_toTopOf="@+id/state33"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state34"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="587dp"
+        android:layout_marginEnd="147dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state34"
+        app:layout_constraintTop_toTopOf="@+id/state34"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state35"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="587dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state35"
+        app:layout_constraintTop_toTopOf="@+id/state35"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/state36"
+        android:layout_width="47dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="587dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/btn_shape"
+        app:layout_constraintEnd_toEndOf="@+id/lots"
+        app:layout_constraintTop_toTopOf="@+id/lots"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:text="P"
+        android:id="@+id/p"
+        android:textSize="25sp"
+        android:textColor="#636363"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/state36"
+        app:layout_constraintTop_toTopOf="@+id/state36"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/state15" >
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

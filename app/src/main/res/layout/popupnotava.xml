@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="267dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Not Available"
+            android:textColor="#FF0000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="235dp"
+            android:layout_height="58dp"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/poppins"
+            android:text="Please choose green parking"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="117dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:alpha="0.8"
+            android:background="@drawable/edittext_rectangle"
+            android:backgroundTint="@color/dark_purple"
+            android:gravity="center"
+            android:text="Ok"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Drop Shadow Stack -->
+
+
+    <item>
+        <shape>
+            <padding
+                android:bottom="0dp"
+                android:left="0dp"
+                android:right="1dp"
+                android:top="2dp" />
+
+            <solid android:color="#00CCCCCC" />
+
+            <corners android:radius="60dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="0dp"
+                android:left="0dp"
+                android:right="1dp"
+                android:top="2dp" />
+
+            <solid android:color="#00CCCCCC" />
+
+            <corners android:radius="60dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="0dp"
+                android:left="0dp"
+                android:right="1dp"
+                android:top="2dp" />
+
+            <solid android:color="#20CCCCCC" />
+
+            <corners android:radius="70dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="0dp"
+                android:left="0dp"
+                android:right="1dp"
+                android:top="2dp" />
+
+            <solid android:color="#30CCCCCC" />
+
+            <corners android:radius="70dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="0dp"
+                android:left="0dp"
+                android:right="1dp"
+                android:top="2dp" />
+
+            <solid android:color="#40CCCCCC" />
+
+            <corners android:radius="60dp" />
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item>
+        <shape>
+            <solid android:color="@color/white" />
+
+            <corners android:radius="50dp"
+                android:bottomRightRadius="0dp"
+                android:bottomLeftRadius="0dp"/>
+        </shape>
+    </item>
+
+</layer-list>

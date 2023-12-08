@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/toast_layout_root"
+    android:background="@color/back"
+    tools:context=".GatePageFragment">
+
+
+
+    <ImageButton
+        android:id="@+id/notification"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="355dp"
+        android:background="@drawable/alarm1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="353dp" />
+
+
+
+    <ImageView
+        android:layout_width="497dp"
+        android:layout_height="443dp"
+        android:layout_marginBottom="196dp"
+        android:alpha="0.7"
+        android:background="@drawable/car"
+        android:paddingTop="106dp"
+        app:layout_constraintBottom_toTopOf="@+id/gate3"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="-89dp" />
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="400dp"
+        android:layout_height="680dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="363dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/back_0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/select"
+        app:layout_constraintStart_toStartOf="@+id/image1"
+        app:layout_constraintTop_toTopOf="@+id/image1"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+    <!--gate of parking -->
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="544dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="15dp"
+        android:text=" Select Gate "
+        android:textColor="@color/white"
+        android:textSize="29dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/image1"
+        app:layout_constraintTop_toTopOf="@+id/image1"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/gate1"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="56dp"
+        android:alpha="0.8"
+        android:background="@drawable/back_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+
+        android:layout_width="114dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.8"
+        android:paddingLeft="10dp"
+        android:text="GATE 1"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gate1"
+        app:layout_constraintTop_toTopOf="@+id/gate1"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:background="@drawable/icon_car1"
+        app:layout_constraintStart_toStartOf="@+id/gate1"
+        app:layout_constraintTop_toTopOf="@+id/gate1"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <!--gate2    -->
+
+
+    <ImageButton
+        android:id="@+id/gate2"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="156dp"
+        android:alpha="0.8"
+        android:background="@drawable/back_2"
+        android:drawableEnd="@drawable/baseline_lock_24"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+
+        android:layout_width="114dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.8"
+        android:paddingLeft="10dp"
+        android:text="GATE 2"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gate2"
+        app:layout_constraintTop_toTopOf="@+id/gate2"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:background="@drawable/icon_car1"
+        app:layout_constraintStart_toStartOf="@+id/gate2"
+        app:layout_constraintTop_toTopOf="@+id/gate2"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+    <!--gate 3-->
+
+    <ImageButton
+        android:id="@+id/gate3"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="260dp"
+        android:alpha="0.8"
+        android:background="@drawable/back_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="114dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.8"
+        android:paddingLeft="10dp"
+        android:text="GATE 3"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gate3"
+        app:layout_constraintTop_toTopOf="@+id/gate3"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+    <!--    -->
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:background="@drawable/icon_car1"
+        app:layout_constraintStart_toStartOf="@+id/gate3"
+        app:layout_constraintTop_toTopOf="@+id/gate3"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

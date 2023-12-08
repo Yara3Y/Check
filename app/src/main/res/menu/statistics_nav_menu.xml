@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="D"
+        android:itemBackground="@color/dark_purple"
+        android:onClick="changeBackground"
+
+        android:id="@+id/Day"/>
+    <item android:title="W"
+        android:id="@+id/Week"
+        android:onClick="changeBackground"
+        android:iconTint="@color/black"
+        />
+    <item
+        android:onClick="changeBackground"
+        android:title="M"
+        android:iconTint="@color/dark_purple"
+        android:id="@+id/Month"/>
+
+</menu>

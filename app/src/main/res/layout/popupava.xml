@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Do you want to reserve a parking?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="114dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/textView8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/dark_purple"
+            android:background="@drawable/edittext_rectangle"
+            android:alpha="0.8"
+            android:text="Yes"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/closepop"
+            android:layout_width="111dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/btnYes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/purple"
+            android:background="@drawable/edittext_rectangle"
+            android:alpha="0.8"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+    </RelativeLayout>
+
+</LinearLayout>

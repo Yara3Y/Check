@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Week">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="#263238"
+        android:textSize="30dp"
+        android:text="Statistics"/>
+    <!--    <ImageView-->
+    <!--        android:id="@+id/back"-->
+    <!--        android:layout_width="412dp"-->
+    <!--        android:layout_height="773dp"-->
+    <!--        android:layout_marginTop="76dp"-->
+    <!--        android:background="@drawable/background"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"-->
+    <!--        tools:layout_editor_absoluteX="-12dp" />-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="@id/back">
+
+        <Button
+            android:id="@+id/Day"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btns"
+            android:text="D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Week"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btns"
+            android:text="W"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Month"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btns"
+            android:text="M"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"
+        android:text="Number of parking \n reserved"
+        android:textSize="16dp"
+        android:textColor="#263238"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="16dp" />
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/DAYBarChart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        tools:ignore="MissingClass,MissingConstraints"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/background_last"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

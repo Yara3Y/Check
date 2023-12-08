@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".StatisticPageFragment">
+
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="44dp"
+        android:text="Statistics"
+        android:alpha="0.8"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_purple"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="390dp"
+        android:layout_height="828dp"
+        android:background="@drawable/background"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <ImageView
+        android:layout_width="479dp"
+        android:layout_height="372dp"
+        android:layout_marginBottom="196dp"
+        android:alpha="0.7"
+        android:background="@drawable/car"
+
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="-43dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="@id/back">
+
+        <ImageButton
+            android:id="@+id/Day"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/btns"
+           />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="-42dp"
+            android:layout_toLeftOf="@+id/Day"
+            android:text="D"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:layout_marginTop="6dp"
+            android:textSize="25dp" />
+
+        <ImageButton
+            android:id="@+id/Week"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@+id/Month"
+            android:background="@drawable/btns"
+ />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="-42dp"
+            android:layout_toLeftOf="@+id/Week"
+            android:text="W"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:layout_marginTop="6dp"
+            android:textSize="25dp" />
+
+        <ImageButton
+            android:id="@+id/Month"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/btns"
+       />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="-42dp"
+            android:layout_toLeftOf="@+id/Month"
+            android:text="M"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:layout_marginTop="6dp"
+            android:textSize="25dp" />
+
+
+    </RelativeLayout>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/DAYBarChart"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="172dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back"
+        tools:ignore="MissingClass,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/X_AxisText"
+        android:layout_width="154dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DAYBarChart"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Y_AxisText"
+        android:layout_width="166dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/DAYBarChart"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
